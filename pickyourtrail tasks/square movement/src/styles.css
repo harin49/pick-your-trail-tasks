@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  height: 50%;
+  width: 50%;
+  border: 1px solid green;
+  position: relative;
+}
+
+#square {
+  box-sizing: border-box;
+  height: 25%;
+  width: 25%;
+  background-color: black;
+  border: 2px solid black;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  height: 50%;
+  width: 50%;
+}
+
+#forward-button {
+  height: 40px;
+  width: 100px;
+  margin: 2px;
+  padding: 2px;
+  border: 2px solid #c6ead4;
+  border-radius: 5px;
+  background-color: #c6ead4;
+}
+
+#backward-button {
+  height: 40px;
+  width: 100px;
+  margin: 2px;
+  padding: 2px;
+  border: 2px solid #c6eaf4;
+  border-radius: 5px;
+  background-color: #c6eaf4;
+}
+
+/* media query for phones  */
+
+@media screen and (max-width: 479px) {
+  #main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  #button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 50%;
+    width: 50%;
+  }
+}
